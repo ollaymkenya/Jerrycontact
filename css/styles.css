@@ -21,6 +21,10 @@ h2 {
     font-size: 2rem;
 }
 
+.wrapper {
+    position: relative;
+}
+
 .header-wrapper {
     background: #cb2d3e;
     /* fallback for old browsers */
@@ -96,7 +100,7 @@ h2 {
     padding: 1rem;
 }
 
-.contacts-content__form h2{
+.contacts-content__form h2 {
     margin: auto;
     text-align: center;
     margin: .5rem;
@@ -105,6 +109,33 @@ h2 {
 .contacts-content__text,
 .contacts-content__form {
     flex: 0 0 calc(50%);
+}
+
+@media screen and (max-width: 992px) {
+    .contacts-content {
+        width: 100%;
+    }
+
+    .contacts-content__text {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top: 1px solid #E9E9E9;
+        border-left: 1px solid #E9E9E9;
+        border-right: 1px solid #E9E9E9;
+        border-bottom: 0;
+    }
+
+    .contacts-content__form {
+        border-left: 1px solid #E9E9E9;
+        border-right: 1px solid #E9E9E9;
+        border-bottom: 1px solid #E9E9E9;
+        border-top: 0;
+    }
+
+    .contacts-content__text,
+    .contacts-content__form {
+        flex: 0 0 calc(95%);
+    }
 }
 
 .contacts-content__form {
@@ -140,13 +171,15 @@ textarea {
     align-items: center;
     cursor: default;
     margin: 0 auto;
-    border : 1px solid rgb(169, 169, 169);
+    border: 1px solid rgb(169, 169, 169);
     border-image: initial;
     box-shadow: inset 1px 1px 3px #ccc;
     border-radius: 5px;
 }
 
-button, input, label{
+button,
+input,
+label {
     display: block;
     font-family: inherit;
     font-size: 100%;
@@ -156,7 +189,7 @@ button, input, label{
     height: 30px;
 }
 
-textarea{
+textarea {
     display: block;
     font-family: inherit;
     font-size: 100%;
@@ -165,18 +198,54 @@ textarea{
     padding: 5px;
 }
 
-button{
+button {
     border: 1px solid rgb(169, 169, 169);
     border-radius: 5px;
     transition: ease-in .5s;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
     border: none;
     background-color: #ffBf02;
 }
 
-.overlay-text{
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100vmax;
+    background-color: rgba(0, 0, 0, 0.4);
     display: none;
+}
+
+.overlay-text {
+    width: 70%;
+    margin: auto;
+    border: 1px solid #E9E9E9;
+    padding: .5rem;
+    display: none;
+}
+
+.overlay-text h2 {
+    width: 100%;
+    margin: .5rem auto;
+    text-align: center;
+}
+
+.close-btn {
+    float: right;
+}
+
+.overlay-text p {
+    margin: auto;
+    width: 80%;
+}
+
+.shifter {
+    width: 10%;
+    background-color: green;
+    height: 100%;
 }
