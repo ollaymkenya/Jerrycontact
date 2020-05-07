@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+}
+
+body {
+    background: #F8F6F6;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.header-wrapper {
+    background: #cb2d3e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ef473a, #cb2d3e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+}
+
+.contacts-header {
+    width: 100%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    /* background-color: rosybrown; */
+}
+
+.contacts-header__text {
+    background-image: url("../assets/eastwood-message-sent.png");
+    background-position: center;
+    background-size: cover;
+    padding: 1px;
+    width: fit-content;
+    margin: auto;
+}
+
+.contacts-header__text-title {
+    color: #efffff;
+    margin: 12rem auto;
+    text-align: center;
+}
+
+.contacts-content {
+    margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 2rem 1rem;
+    justify-content: center;
+}
+
+.contacts-content__text {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 1px solid #E9E9E9;
+    border-left: 1px solid #E9E9E9;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.contacts-content__text-item {
+    margin-top: 1rem;
+    padding: 10px;
+}
+
+.contacts-content__text-title {
+    margin: .5rem;
+}
+
+.contacts-content__text-paragraph {
+    margin: .5rem;
+}
+
+.contacts-content__form {
+    background-image: url("../assets/eastwood-no-messages.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 1px solid #E9E9E9;
+    border-right: 1px solid #E9E9E9;
+    border-bottom: 1px solid #E9E9E9;
+    padding: 1rem;
+}
+
+.contacts-content__form h2{
+    margin: auto;
+    text-align: center;
+    margin: .5rem;
+}
+
+.contacts-content__text,
+.contacts-content__form {
+    flex: 0 0 calc(50%);
+}
+
+.contacts-content__form {
+    justify-content: center;
+    align-items: center;
+}
+
+
+kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: .85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+
+input,
+textarea {
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    display: inline-block;
+    text-align: start;
+    align-items: center;
+    cursor: default;
+    margin: 0 auto;
+    border : 1px solid rgb(169, 169, 169);
+    border-image: initial;
+    box-shadow: inset 1px 1px 3px #ccc;
+    border-radius: 5px;
+}
+
+button, input, label{
+    display: block;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0 auto;
+    width: 70%;
+    padding: 5px;
+    height: 30px;
+}
+
+textarea{
+    display: block;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 2rem auto;
+    width: 70%;
+    padding: 5px;
+}
+
+button{
+    border: 1px solid rgb(169, 169, 169);
+    border-radius: 5px;
+    transition: ease-in .5s;
+}
+
+button:hover{
+    cursor: pointer;
+    border: none;
+    background-color: #ffBf02;
+}
