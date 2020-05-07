@@ -176,3 +176,7 @@ button:hover{
     border: none;
     background-color: #ffBf02;
 }
+
+.overlay-text{
+    display: none;
+}
